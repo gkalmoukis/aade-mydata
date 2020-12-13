@@ -1,0 +1,24 @@
+{
+    "name": "gkalmoukis/aade-mydata",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Giorgos Kalmoukis",
+            "email": "giorgoskalmoukis@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+        	"Gkalmoukis\\AadeMydata\\": "src/"
+    	}
+     },
+    "extra": {
+    "laravel": {
+        "providers": [
+            "Gkalmoukis\\AadeMydata\\AadeMydataServiceProvider"
+        ]
+    }
+}
+}
