@@ -15,7 +15,7 @@ class AadeMydataServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/mydata.php' => config_path('mydata.php'),
-        ], 'mydata');
+        ], 'config');
     }
 
     /**
