@@ -17,10 +17,13 @@
     	}
      },
     "extra": {
-    "laravel": {
-        "providers": [
-            "Gkalmoukis\\AadeMydata\\AadeMydataServiceProvider"
-        ]
+        "laravel": {
+            "providers": [
+                "Gkalmoukis\\AadeMydata\\AadeMydataServiceProvider"
+            ]
+        },
+        "aliases": {
+            "AadeMydata": "Gkalmoukis\\AadeMydata\\Facades\\AadeMydata"
+        }
     }
-}
 }

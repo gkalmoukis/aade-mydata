@@ -25,9 +25,11 @@ class AadeMydataServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(
-            __DIR__.'/../config/mydata.php',
-            'mydata'
-        );
+        $this->mergeConfigFrom(__DIR__.'/../config/mydata.php', 'mydata');
+
+        $this->app->bind('aademydata', function($app) {
+            return new AadeMydata();
+        });
+
     }
 }
